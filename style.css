@@ -1,0 +1,136 @@
+html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('./Images/temperatures.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+
+.parent {
+    width: 900px;
+    height: 400px;
+    border: 0.5px groove rgba(128, 128, 128, 0.3);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    display: flex;
+    /* grid-template-columns: 50% 50%; */
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 20px; */
+    padding: 0px 10px;
+}
+
+.converter_child {
+    backdrop-filter: blur(2px);
+    /* width: 400px; */
+    height: 300px;
+    /* text-align: center; */
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    /* border-radius: 20px; */
+    /* border: 1px solid grey; */
+    padding: 0px 20px;
+    font-size: 20px;
+    box-shadow: 2px 2px 5px grey;
+    
+}
+
+.converter_child form {
+    margin-top: 50px;
+}
+
+.converter_child h1 {
+    text-align: center;
+    font-family: monospace;
+    font-size: 30px;
+}
+
+.converter_child form .to select {
+    border-radius: 0px;
+    padding: 5px;
+    /* background-color: lightblue; */
+    outline: none;
+    width: 150px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.converter_child form .from input {
+    width: 150px;
+    /* outline: none; */
+    border: 2px solid gray;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.converter_child form .from input::placeholder {
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    transition-duration: 400ms;
+}
+
+.converter_child form .from input:focus::placeholder {
+    transform: translateX(-155px);
+}
+
+.converter_child form .from input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.converter_child form .from select {
+    border-radius: 0px;
+    /* background-color: lightblue; */
+    outline: none;
+    width: 50px;
+    padding: 5px;
+}
+
+.converter_child form button {
+    padding: 5px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family:'Courier New', Courier, monospace;
+    margin-top: 30px;
+}
+
+.converter_child span{
+    font-size: 70px;
+    position: absolute;
+    left: 105%;
+    top: 45%;
+}
+
+.result_child {
+    backdrop-filter: blur(2px);
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    /* border-radius: 20px; */
+    /* border: 1px solid grey; */
+    box-shadow: 2px 2px 5px grey;
+    background-color: rgba(240, 248, 255, 0.817);
+    font-family: monospace;
+    font-weight: 600;
+    background-image: url('./Images/istockphoto-1184482788-1024x1024-removebg-preview.png');
+    background-size: 100% 100%;
+}
+
+.result_child #result {
+    margin-top: 1.8em;
+    font-size: 50px;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+}

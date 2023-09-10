@@ -1,0 +1,20 @@
+Temperature Conversion Formulas
+
+C to K
+K = C + 273.15
+
+K to C
+C = K - 273.15
+
+F to C
+C = (F-32) x 5/9
+
+C to F
+F = C(9/5) + 32
+
+F to K
+K = (F-32) x 5/9 + 273.15
+
+K to F
+F = (K - 273.15) x 9/5 + 32
+ 
